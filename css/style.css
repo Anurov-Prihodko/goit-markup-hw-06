@@ -1122,6 +1122,7 @@ body {
 }
 
 .check-input:checked ~ .check::before {
+  /* fill: var(--accent-color); */
   background-image: url(../img/modal/icon-check.svg);
 }
 
