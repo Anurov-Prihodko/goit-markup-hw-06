@@ -1114,21 +1114,22 @@ body {
   width: 16px;
   height: 15px;
 
-  fill: currentColor;
-
   background-image: url(../img/modal/checkbox.svg);
+
   transition: background-image var(--time) var(--function-time),
     background-color var(--time) var(--function-time);
 }
 
 .check-input:checked ~ .check::before {
-  /* fill: var(--accent-color); */
   background-image: url(../img/modal/icon-check.svg);
+  border-radius: 2px;
 }
 
 .check-input:focus ~ .check::before {
-  background-color: var(--accent-color);
-  /* fill: var(--accent-color); */
+  background-image: url(../img/modal/checkbox-omg.svg);
+  border-radius: 2px;
+  background-color: var(--white-color);
+  border-color: var(--accent-color);
 }
 
 .check-text {
