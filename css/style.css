@@ -623,9 +623,10 @@ body {
 }
 
 .blok-footer {
-  position: relative;
+  /* position: relative; */
   display: flex;
   align-items: baseline;
+  justify-content: space-between;
 }
 
 .first-blok-footer {
@@ -682,17 +683,16 @@ body {
 }
 
 .subscribe {
-  position: absolute;
+  /* position: absolute;
   right: 0;
-  top: 12px;
+  top: 12px; */
 
-  /* display: flex; */
-  /* justify-content: flex-start; */
-  /* align-items: baseline; */
-  /* flex-direction: column; */
+  display: flex;
+  /* justify-content: flex-end; */
+  align-items: baseline;
+  flex-direction: column;
 
   width: 570px;
-
   font-family: var(--text-font);
   font-weight: 700;
   font-size: 14px;
@@ -703,11 +703,11 @@ body {
   color: var(--white-color);
 }
 
-.subscribe-btn {
-  position: absolute;
-  bottom: 0;
-  right: 0;
+.form-subscribe {
+  display: flex;
+}
 
+.subscribe-btn {
   font-family: var(--text-font);
   font-weight: 700;
   font-size: 16px;
@@ -1113,6 +1113,7 @@ body {
   display: inline-block;
   width: 16px;
   height: 15px;
+
   fill: currentColor;
 
   background-image: url(../img/modal/checkbox.svg);
@@ -1126,6 +1127,7 @@ body {
 
 .check-input:focus ~ .check::before {
   background-color: var(--accent-color);
+  /* fill: var(--accent-color); */
 }
 
 .check-text {
