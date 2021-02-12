@@ -406,6 +406,30 @@
               </li>
             </ul>
           </div>
+
+          <!--подписка-->
+          <div class="subscribe">
+            <p class="subscribe-text">Подпишитесь на рассылку</p>
+            <form action="#" name="subscribe-form" autocomplete="on">
+              <div class="subscribe-form-field">
+                <input
+                  class="form-input"
+                  type="email"
+                  placeholder="E-mail"
+                  name="email"
+                  id="user_email"
+                  required
+                />
+              </div>
+
+              <button type="submit" class="subscribe-btn">
+                Подписаться
+                <svg width="24" height="24" class="subscribe-icon">
+                  <use href="./img/sprite.svg#icon-send"></use>
+                </svg>
+              </button>
+            </form>
+          </div>
         </div>
       </div>
     </footer>
